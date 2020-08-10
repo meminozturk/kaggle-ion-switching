@@ -7,7 +7,7 @@ Thanks to Kaggle team, organizers, Kaggle community for their contributions and 
 This is the brief summary of our final pipeline with the code for each step. Please visit the competition page for competition data and more details;
 https://www.kaggle.com/c/liverpool-ion-switching/
 
-![Final Leaderboard](final_leaderboard.png)
+![Final Leaderboard](final_leaderboard.PNG)
 
 ### **1- Clean Dataset Creation** 
 This is the first and most important step in our progress. Before we removed drift and other kind of noises by himself, we couldn't have reliable CV with the raw data. Other teams may set up a reliable CV on the raw data, but, it didn't work for us after some point. It's a bit hard to prevent overfitting on a synthetic and noisy dataset, especially when you are using multiple OOFs for stacking. Please see "remove-trends-giba-explained" notebook by [Giba](https://www.kaggle.com/titericz) for more details;
