@@ -85,7 +85,7 @@ train['noise'] = train['signal'].values - train['wavenet_prediction'].values
 test['noise'] = test['signal'].values - test['wavenet_prediction'].values
 
 ```
-This step gave us a nice boost on public LB but, results are almost the same on private leaderboard without XGB. On the other hand, our best private submission was the result of this XGB model with a score of 0.94568 on private leaderbord, [which is available here](https://www.kaggle.com/meminozturk/into-the-wild-xgb-submission)
+This step gave us a nice boost on public LB but, results are almost the same on private leaderboard without XGB. On the other hand, our best private submission was the result of this XGB model with a score of 0.94568 on private leaderbord. [See; into-the-wild-xgb-submission.ipynb]((https://github.com/meminozturk/kaggle-ion-switching/blob/master/into-the-wild-xgb-submission.ipynb)
 
 I hope you find it useful what we've done, which is open to play with.
 
