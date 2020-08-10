@@ -73,7 +73,7 @@ def sliding_predict(model, x):
     return pred
 ```
 
-It scored 0.04559 which is better than our current private score without any blending. [(See; into-the-wild-wavenet.ipynb)](https://github.com/meminozturk/kaggle-ion-switching/blob/master/into-the-wild-wavenet.ipynb)
+It scored 0.94559 which is better than our current private score without any blending. [(See; into-the-wild-wavenet.ipynb)](https://github.com/meminozturk/kaggle-ion-switching/blob/master/into-the-wild-wavenet.ipynb)
 
 ### **5-XGB Classifier for Submission** 
 #### **(Private Score: 0.94555 - Public Score: 0.94686)**
