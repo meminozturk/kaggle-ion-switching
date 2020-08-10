@@ -1,13 +1,9 @@
-# kaggle-ion-switching
-5th place solution to University of Liverpool - Ion Switching Kaggle Competition
+# 5th place solution to University of Liverpool - Ion Switching Kaggle Competition
 
 Hi Everyone,
 Thanks to Kaggle team, organizers, Kaggle community for their contributions and my brilliant teammates [Giba](https://www.kaggle.com/titericz), [Ahmet](https://www.kaggle.com/aerdem4), [Skgone ](https://www.kaggle.com/skgone123) and [Alex ](https://www.kaggle.com/lihuajing)for their efforts. It was real fun to work with them.
 
-I shared a post about our journey in this competition with some technical details previously;
-https://www.kaggle.com/c/liverpool-ion-switching/discussion/153688
-
-This time, I will briefly summarize our final pipeline and share the code for each step.
+This is the brief summary of our final pipeline with the code for each step.
 
 ### **1- Clean Dataset Creation** 
 This is the first and most important step in our progress. Before [Giba ](https://www.kaggle.com/titericz) removed drift and other kind of noises by himself, we couldn't have reliable CV with Chris' data. other teams may set up a reliable CV on Chris' dataset but it didn't work for us after some point. (thanks to [Chris](https://www.kaggle.com/cdeotte) for his generosity in this competition). It's a bit hard to prevent overfitting on a synthetic and noisy dataset, especially when you are using multiple OOFs for stacking. [Giba](https://www.kaggle.com/titericz) shared his perfect work with all explanations, please see his notebook for more details;
