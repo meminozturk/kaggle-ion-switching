@@ -1,13 +1,13 @@
 # 5th place solution to University of Liverpool - Ion Switching Kaggle Competition
 
-Hi Everyone,
+University of Liverpool - Ion Switching Kaggle Competition finalized on 25th May 2020 with 2618 teams.
+
 Thanks to Kaggle team, organizers, Kaggle community for their contributions and my brilliant teammates [Giba](https://www.kaggle.com/titericz), [Ahmet](https://www.kaggle.com/aerdem4), [Skgone ](https://www.kaggle.com/skgone123) and [Alex ](https://www.kaggle.com/lihuajing)for their efforts. It was real fun to work with them.
 
 This is the brief summary of our final pipeline with the code for each step.
 
 ### **1- Clean Dataset Creation** 
-This is the first and most important step in our progress. Before [Giba ](https://www.kaggle.com/titericz) removed drift and other kind of noises by himself, we couldn't have reliable CV with Chris' data. other teams may set up a reliable CV on Chris' dataset but it didn't work for us after some point. (thanks to [Chris](https://www.kaggle.com/cdeotte) for his generosity in this competition). It's a bit hard to prevent overfitting on a synthetic and noisy dataset, especially when you are using multiple OOFs for stacking. [Giba](https://www.kaggle.com/titericz) shared his perfect work with all explanations, please see his notebook for more details;
-https://www.kaggle.com/titericz/remove-trends-giba-explained
+This is the first and most important step in our progress. Before we removed drift and other kind of noises by himself, we couldn't have reliable CV with the raw data. Other teams may set up a reliable CV on the raw data, but, it didn't work for us after some point. It's a bit hard to prevent overfitting on a synthetic and noisy dataset, especially when you are using multiple OOFs for stacking. Please see "remove-trends-giba-explained" notebook by [Giba](https://www.kaggle.com/titericz) for more details;
 
 ### **2- Data Augmentation** 
 We found it useful to augment a new 10-channel batch by summing 5th and 8th batches because 10-channel batches are simply the sum of two 5-channel batches. To be more specific, it's sum of 2 different (5 HMM Bs + pink noise + white noise).
