@@ -38,11 +38,11 @@ groups = [[0, 2, 3, 4, 5], [1, 6, 7, 8, 9]]
 
 ```
 We tried 3 LGBs, 1 RFC, 1 MLP, 1 BiGRU, 1 KNN, 1 SVM for stacking. We used the same validation scheme and applied the same data augmentation above to create OOFs. Only 3 models' OOFs were added to the wavenet (click on model names to reach their notebooks);
-- [Random Forest Classifier,](https://www.kaggle.com/meminozturk/into-the-wild-rfc-classification ) similar to [Sergey's](https://www.kaggle.com/sggpls) public kernel (thanks to Sergey for his contributions). We applied it on our own dataset and calculated lead/lag features grouping by 10-second batches to avoid leakage from other batches for both train and test. 
+- [Random Forest Classifier,](https://github.com/meminozturk/kaggle-ion-switching/blob/master/into-the-wild-rfc-classification.ipynb) similar to [Sergey's](https://www.kaggle.com/sggpls) public kernel (thanks to Sergey for his contributions). We applied it on our own dataset and calculated lead/lag features grouping by 10-second batches to avoid leakage from other batches for both train and test. 
 
-- [Lightgbm Regression,](https://www.kaggle.com/meminozturk/into-the-wild-lgb-regression) simply the Lightgbm Regression version of the RFC model with same lead/lag features. [Alex](https://www.kaggle.com/lihuajing) had created this model before we teamed up. I tried hyperparameter optimization and increased its CV by 0.01, however, wavenet worked better with initial paramaters;
+- [Lightgbm Regression,](https://github.com/meminozturk/kaggle-ion-switching/blob/master/into-the-wild-lgb-regression.ipynb) simply the Lightgbm Regression version of the RFC model with same lead/lag features. [Alex](https://www.kaggle.com/lihuajing) had created this model before we teamed up. I tried hyperparameter optimization and increased its CV by 0.01, however, wavenet worked better with initial paramaters;
 
-- [MLP Regression,](https://www.kaggle.com/meminozturk/into-the-wild-mlp-regression) it's the MLP part of [Marcelo's ](https://www.kaggle.com/martxelo) kernel with some adjustments;
+- [MLP Regression,](https://github.com/meminozturk/kaggle-ion-switching/blob/master/into-the-wild-mlp-regression.ipynb) it's the MLP part of [Marcelo's ](https://www.kaggle.com/martxelo) kernel with some adjustments;
  
 ### **4- Wavenet Model** 
 #### **(Private Score: 0.94559 - Public Score: 0.94673)**
